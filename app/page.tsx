@@ -126,7 +126,7 @@ const AnimatedCounter: React.FC<CounterProps> = ({
 // PRINCIPAL HOMEPAGE ARCHITECTURE
 // ==========================================
 export default function Homepage() {
-  const pathname = usePathname()
+  const pathname = usePathname();
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [currency, setCurrency] = useState<"NGN" | "USD">("NGN");
@@ -359,27 +359,14 @@ export default function Homepage() {
   ];
 
   const navLinks = [
-    {label: "Home",
-      link: "#home"
-    }, 
-    {label: "About",
-      link: "#about"
-    }, 
-    {label: "Contact",
-      link: "#contact"
-    }, 
-    {label: "Services",
-      link: "#services"
-    }, 
-    {label: "Process",
-      link: "#process"
-    }, 
-    {label: "Pricing",
-      link: "#pricing"
-    }, 
-    {label: "FAQs",
-      link: "#faqs"
-    }];
+    { label: "Home", link: "#home" },
+    { label: "About", link: "#about" },
+    { label: "Contact", link: "#contact" },
+    { label: "Services", link: "#services" },
+    { label: "Process", link: "#process" },
+    { label: "Pricing", link: "#pricing" },
+    { label: "FAQs", link: "#faqs" },
+  ];
   return (
     <div
       className="min-h-screen bg-[#090806] text-[#FFF8F0] overflow-x-hidden relative select-none antialiased selection:bg-[#D4A030] selection:text-[#090806]"
@@ -395,7 +382,10 @@ export default function Homepage() {
       <nav
         className={`fixed top-0 left-0 right-0 z-[900] flex items-center justify-between px-6 md:px-12 h-[72px] transition-all duration-300 border-b border-[rgba(212,160,48,0.14)] ${isScrolled ? "bg-[#090806]/98 backdrop-blur-[20px]" : "bg-[#090806]/92 backdrop-blur-[20px]"}`}
       >
-        <div className="cursor-pointer" onClick={() => window.location.href = "#home"}>
+        <div
+          className="cursor-pointer"
+          onClick={() => (window.location.href = "#home")}
+        >
           <Image
             src="/images/logo.png"
             alt="Craftraction"
@@ -418,7 +408,9 @@ export default function Homepage() {
                 className={`text-xs font-semibold uppercase tracking-widest text-gray-400 hover:text-white transition-all duration-300 relative py-2 group/link focus:outline-none focus:text-white`}
               >
                 {item.label}
-                <span className={`absolute bottom-0 left-0 w-0 h-0.5 bg-[#F06428] transition-all duration-300 group-hover/link:w-full group-focus/link:w-full`} />
+                <span
+                  className={`absolute bottom-0 left-0 w-0 h-0.5 bg-[#F06428] transition-all duration-300 group-hover/link:w-full group-focus/link:w-full`}
+                />
                 <span className="absolute bottom-0 right-0 w-0 h-0.5 bg-amber-500 transition-all duration-300 group-hover/link:w-1/2 group-focus/link:w-1/2" />
               </Link>
             </motion.div>
@@ -537,7 +529,7 @@ export default function Homepage() {
               className="text-5xl sm:text-7xl md:text-8xl font-black tracking-tighter text-white mb-6 leading-[0.95] z-50"
             >
               We Build Brands That <br className="sm:inline" />
-              <span className="bg-linear-to-r h-22 md:h-45 from-[#F0BC40] via-[#F06428] to-[#E53520] bg-clip-text text-transparent inline-flex text-start items-center justify-center min-h-[1.1em] hover:scale-[1.02] transition-transform duration-500 cursor-default relative">
+              <span className="bg-linear-to-r h-22 md:h-45 from-[#F0BC40] via-[#F06428] to-[#E53520] pt-2 bg-clip-text text-transparent inline-flex text-start min-h-[1.1em] hover:scale-[1.02] transition-transform duration-500 cursor-default relative">
                 <TypewriterPhrases />
                 {/* Animated Typing Blinking Cursor */}
                 <motion.span
@@ -547,7 +539,7 @@ export default function Homepage() {
                     repeat: Infinity,
                     ease: "linear",
                   }}
-                  className="inline-block ml-1 w-2 h-10 sm:h-16 md:h-20 bg-amber-500 align-middle self-center"
+                  className="inline-block ml-1 w-2 h-10 sm:h-16 md:h-20 bg-amber-500 align-middle self-start"
                 />
               </span>
             </motion.h1>
@@ -568,7 +560,7 @@ export default function Homepage() {
               className="flex flex-wrap gap-3.5"
             >
               <button
-                onClick={() => window.location.href = '#contact'}
+                onClick={() => (window.location.href = "#contact")}
                 className="bg-[#D4A030] text-[#090806] border-none px-8 py-4 text-[10px] tracking-[3px] uppercase font-extrabold cursor-pointer transition-all duration-200 hover:bg-[#F0BC40] hover:-translate-y-0.5 hover:shadow-[0_8px_30px_rgba(212,160,48,0.3)]"
               >
                 Start a Project &rarr;
@@ -1032,6 +1024,15 @@ export default function Homepage() {
             ))}
           </div>
         </div>
+
+        <Link href={"/pricing"}>
+          <button
+            onClick={() => scrollToSection("contact")}
+            className={`mt-6 w-full py-3.5 text-center text-[9px] tracking-widest uppercase font-extrabold cursor-pointer transition-opacity border border-[#ffffffa5]`}
+          >
+            View Full Pricing &rarr;
+          </button>
+        </Link>
       </section>
 
       {/* FAQ INTERACTIVE COMPONENT EXPANDABLE */}
@@ -1131,9 +1132,11 @@ export default function Homepage() {
           </p>
 
           <div className="flex flex-wrap gap-3.5 justify-center">
-            <button className="bg-[#090806] text-[#D4A030] border-none px-9 py-4 text-[10px] tracking-[3px] uppercase font-extrabold cursor-pointer transition-colors hover:bg-[#1a1208]">
-              Book a Free Discovery Call &rarr;
-            </button>
+            <Link href={"https://wa.me/+2349023792627"}>
+              <button className="bg-[#090806] text-[#D4A030] border-none px-9 py-4 text-[10px] tracking-[3px] uppercase font-extrabold cursor-pointer transition-colors hover:bg-[#1a1208]">
+                Book a Free Discovery Call &rarr;
+              </button>
+            </Link>
             <button
               onClick={() => scrollToSection("services")}
               className="border-2 border-black/25 text-[#090806] bg-transparent px-9 py-3.5 text-[10px] tracking-[3px] uppercase font-semibold cursor-pointer transition-colors hover:border-black"
@@ -1223,19 +1226,24 @@ export default function Homepage() {
               </div>
               <ul className="list-none flex flex-col gap-2.5 p-0 m-0 text-xs text-[rgba(255,248,240,0.28)] font-light">
                 <li className="hover:text-[#D4A030] transition-colors">
-                  <a
-                    href="mailto:hello@craftraction.com"
+                  <Link
+                    href="mailto:craftraction@gmail.com"
                     className="text-inherit text-none"
                   >
-                    hello@craftraction.com
-                  </a>
+                    craftraction@gmail.com
+                  </Link>
                 </li>
                 <li className="hover:text-[#D4A030] transition-colors">
-                  craftraction.com
+                  <Link
+                    href="https://wa.me/2349023792627"
+                    className="text-inherit text-none"
+                  >
+                    +234 902 379 2627
+                  </Link>
                 </li>
-                <li className="hover:text-[#D4A030] transition-colors">
+                {/* <li className="hover:text-[#D4A030] transition-colors">
                   @craftraction
-                </li>
+                </li> */}
               </ul>
             </div>
           </div>

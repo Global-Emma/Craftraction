@@ -12,6 +12,13 @@
   --font-mono: var(--font-geist-mono);
 }
 
+@theme {
+  --color-brand-black: #090806;
+  --color-brand-card: #161310;
+  --color-brand-gold: #D4A030;
+  --color-brand-orange: #F06428;
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
