@@ -476,7 +476,7 @@ export default function Homepage() {
                   initial={{ opacity: 0, y: -10 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.5, delay: idx * 0.1 }}
-                  onClick={() => scrollToSection("contact")}
+                  onClick={() => scrollToSection(item.link)}
                 >
                   <Link
                     href={item.link}
