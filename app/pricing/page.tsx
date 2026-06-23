@@ -387,16 +387,17 @@ export default function PricingPage() {
           </div>
         </div>
       </section>
-      <Link
-          href="/#contact"
-          className="w-full bg-[#DD4322] text-white font-bold py-4 rounded-xl text-xs uppercase tracking-widest cursor-pointer transition-all focus:outline-none focus:ring-2 focus:ring-amber-500 border border-transparent hover:border-white"
-        >
-          <span className="absolute inset-0 w-full h-full bg-linear-to-r from-[#DD4322] via-[#D9A021] to-[#DD7107] opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-0" />
-          <span className="absolute inset-0 w-full h-full bg-white opacity-100 group-hover:opacity-0 transition-opacity duration-500 z-0" />
-          <span className="relative z-10 text-black group-hover:text-white transition-colors duration-300">
-            Book a Strategy Session
-          </span>
-        </Link>
+      <div className="w-full bg-[#DD4322] text-white font-bold py-4 rounded-xl text-xs uppercase tracking-widest cursor-pointer transition-all focus:outline-none focus:ring-2 focus:ring-amber-500 border border-transparent hover:border-white">
+        <Link
+        href="/#contact"
+      >
+        <span className="absolute inset-0 w-full h-full bg-linear-to-r from-[#DD4322] via-[#D9A021] to-[#DD7107] opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-0" />
+        <span className="absolute inset-0 w-full h-full bg-white opacity-100 group-hover:opacity-0 transition-opacity duration-500 z-0" />
+        <span className="relative z-10 text-black group-hover:text-white transition-colors duration-300">
+          Book a Strategy Session
+        </span>
+      </Link>
+      </div>
     </div>
   );
 }
