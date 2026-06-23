@@ -55,10 +55,10 @@ export default function BrandShiftMediaHome() {
 
   // --- Mock Data ---
   const counters = [
-    { value: "150+", label: "Projects Completed" },
-    { value: "80+", label: "Happy Clients" },
-    { value: "45+", label: "Brands Transformed" },
-    { value: "50+", label: "Campaign Reach" },
+    { value: "50+", label: "Brands Transformed" },
+    { value: "5", label: "Countries Served" },
+    { value: "8", label: "Services Under One Roof" },
+    { value: "₦60k", label: "Starting Price" },
   ];
 
   const containerVariants = {
@@ -573,7 +573,7 @@ export default function BrandShiftMediaHome() {
               className="text-4xl sm:text-7xl md:text-8xl font-black tracking-tighter text-white mb-6 leading-[0.95]"
             >
               We Build Brands That <br className="sm:inline" />
-              <span className="bg-linear-to-r from-white via-[#DD4322] to-amber-500 bg-clip-text text-transparent inline-flex text-center items-center justify-center min-h-[1.1em] hover:scale-[1.02] transition-transform duration-500 cursor-default relative">
+              <span className="bg-linear-to-r from-[#DD4322] via-[#D9A021] to-[#DD7107] bg-clip-text text-transparent inline-flex text-center items-center justify-center min-h-[1.1em] hover:scale-[1.02] transition-transform duration-500 cursor-default relative">
                 <TypewriterPhrases />
                 {/* Animated Typing Blinking Cursor */}
                 <motion.span
@@ -1459,9 +1459,25 @@ export default function BrandShiftMediaHome() {
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16 relative z-10">
           {/* Agency Bio Block */}
           <div className="space-y-4">
-            <span className="text-xl font-black tracking-tighter text-white uppercase">
-              BRAND SHIFT<span className="text-[#D9A021]">.</span>
-            </span>
+            <Link
+              href="/"
+              className="flex items-center gap-2 group focus:outline-none rounded-lg relative overflow-hidden"
+            >
+              <motion.div
+                whileHover={{ scale: 1.05 }}
+                transition={{ type: "spring", stiffness: 400, damping: 15 }}
+              >
+                <Image
+                  src="/images/logo.png"
+                  alt="craftraction_logo"
+                  width={250}
+                  height={250}
+                  loading="eager"
+                  sizes="(max-width: 640px) 112px, (max-width: 768px) 144px, (max-width: 1024px) 176px, 192px"
+                  className="w-28 sm:w-36 md:w-44 lg:w-48 h-auto transition-all duration-300 group-hover:brightness-110"
+                />
+              </motion.div>
+            </Link>
             <p className="text-gray-400 text-xs sm:text-sm leading-relaxed max-w-xs">
               Bespoke creative design patterns, scalable performance
               optimization, and deep enterprise visibility ecosystems. Built for
@@ -1475,7 +1491,7 @@ export default function BrandShiftMediaHome() {
               Ecosystem Navigation
             </h4>
             <nav className="flex flex-col gap-3">
-              {["Services", "Portfolio", "Why Us", "Process"].map((item) => (
+              {navLinks.map((item) => (
                 <a
                   key={item}
                   href={`#${item.toLowerCase().replace(" ", "-")}`}
@@ -1514,14 +1530,30 @@ export default function BrandShiftMediaHome() {
               Sync Ecosystem Network
             </h4>
             <div className="flex flex-col gap-3 text-xs text-gray-400">
-              <a
+              <Link
                 href="https://tiktok.com/@brandshiftmedia"
                 target="_blank"
                 rel="noreferrer"
                 className="hover:text-amber-500 transition-colors"
               >
-                TikTok: @brandshiftmedia
-              </a>
+                TikTok: @craftraction
+              </Link>
+              <Link
+                href="mailto:craftraction@gmail.com"
+                target="_blank"
+                rel="noreferrer"
+                className="hover:text-amber-500 transition-colors"
+              >
+                craftraction@gmail.com
+              </Link>
+              <Link
+                href="https://wa.me/2349023792627"
+                target="_blank"
+                rel="noreferrer"
+                className="hover:text-amber-500 transition-colors"
+              >
+                +234 902 379 2627
+              </Link>
             </div>
           </div>
         </div>
