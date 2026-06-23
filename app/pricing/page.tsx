@@ -386,18 +386,18 @@ export default function PricingPage() {
             ))}
           </div>
         </div>
-      </section>
 
-      <Link
-        href="/#contact"
-        className="relative group px-5 py-2.5 lg:px-6 lg:py-3 rounded-full text-xs font-bold uppercase tracking-widest overflow-hidden border border-white/10 transition-all duration-300"
-      >
-        <span className="absolute inset-0 w-full h-full bg-linear-to-r from-[#DD4322] via-[#D9A021] to-[#DD7107] opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-0" />
-        <span className="absolute inset-0 w-full h-full bg-white opacity-100 group-hover:opacity-0 transition-opacity duration-500 z-0" />
-        <span className="relative z-10 text-black group-hover:text-white transition-colors duration-300">
-          Book a Strategy Session
-        </span>
-      </Link>
+        <Link
+          href="/#contact"
+          className="relative group px-5 py-2.5 lg:px-6 lg:py-3 rounded-full text-xs font-bold uppercase tracking-widest overflow-hidden border border-white/10 transition-all duration-300"
+        >
+          <span className="absolute inset-0 w-full h-full bg-linear-to-r from-[#DD4322] via-[#D9A021] to-[#DD7107] opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-0" />
+          <span className="absolute inset-0 w-full h-full bg-white opacity-100 group-hover:opacity-0 transition-opacity duration-500 z-0" />
+          <span className="relative z-10 text-black group-hover:text-white transition-colors duration-300">
+            Book a Strategy Session
+          </span>
+        </Link>
+      </section>
     </div>
   );
 }
