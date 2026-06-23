@@ -55,10 +55,10 @@ export default function BrandShiftMediaHome() {
 
   // --- Mock Data ---
   const counters = [
-    { value: "50+", label: "Brands Transformed" },
-    { value: "5", label: "Countries Served" },
-    { value: "8", label: "Services Under One Roof" },
-    { value: "₦60k", label: "Starting Price" },
+    { value: "50+", label: "Brands Transformed", bg: "bg-[#DD7107]", text: "text-[#DD4322]" },
+    { value: "5", label: "Countries Served", bg: "bg-[#DD4322]", text: "text-[#D9A021]" },
+    { value: "8", label: "Services Under One Roof", bg: "bg-[#D9A021]", text: "text-[#DD7107]" },
+    { value: "₦60k", label: "Starting Price", bg: "bg-[#00000]", text: "text-[#DD4322]" },
   ];
 
   const containerVariants = {
@@ -553,7 +553,7 @@ export default function BrandShiftMediaHome() {
       <section className="min-h-screen flex items-center px-6 md:px-12 pt-28 pb-16 relative overflow-hidden max-w-full">
         <div className="absolute inset-0 pointer-events-none z-0 bg-[radial-gradient(ellipse_60%_70%_at_80%_30%,rgba(212,160,48,0.08)_0%,transparent_60%),radial-gradient(ellipse_40%_50%_at_10%_80%,rgba(240,100,40,0.05)_0%,transparent_60%)]" />
 
-        <div className="max-w-[1280px] mx-auto w-full grid grid-cols-1 md:grid-cols-2 gap-20 items-center relative z-10">
+        {/* <div className="max-w-[1280px] mx-auto w-full grid grid-cols-1 md:grid-cols-2 gap-20 items-center relative z-10"> */}
           <div className="max-w-5xl mx-auto text-center relative z-10 space-y-4">
             <motion.div
               initial={{ opacity: 0, scale: 0.9 }}
@@ -594,9 +594,12 @@ export default function BrandShiftMediaHome() {
               transition={{ duration: 0.8, delay: 0.2 }}
               className="text-sm sm:text-lg text-gray-400 max-w-2xl mx-auto mb-12 leading-relaxed font-normal"
             >
-              We handle your entire digital presence, social media, content,
-              advertising, branding, and more, so you can focus on what you do
-              best: running your business.
+              Craftraction is a creative and digital agency built for brands
+              that refuse to be ignored. We shape your digital presence through
+              branding, web development, digital marketing, and strategic
+              advertising — strengthening your visibility, connecting you with
+              your audience, and generating traction that drives measurable
+              results. We do not chase attention. We craft it.
             </motion.p>
 
             {/* Accessible Action Controls */}
@@ -624,7 +627,7 @@ export default function BrandShiftMediaHome() {
           </div>
 
           {/* FLOATING ICON GRAPHIC LOGO BACKGROUND */}
-          <motion.div
+          {/* <motion.div
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 1.2, delay: 0.5 }}
@@ -637,8 +640,8 @@ export default function BrandShiftMediaHome() {
               alt="Craftraction Emblem"
               className="w-full h-auto opacity-50 md:opacity-90 object-contain block max-w-70 md:max-w-full"
             />
-          </motion.div>
-        </div>
+          </motion.div> */}
+        {/* </div> */}
       </section>
 
       {/* Bottom Horizontal Animated Border Line */}
@@ -666,15 +669,6 @@ export default function BrandShiftMediaHome() {
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
           >
-            {/* <span className="text-[#D9A021] text-[10px] font-bold uppercase tracking-widest block">
-              About Craftraction
-            </span>
-
-            <p className="text-gray-400 text-sm sm:text-base leading-relaxed max-w-2xl">
-              Craftraction is a creative and digital agency built for brands that refuse to be ignored. We shape your digital presence through branding, web development, digital marketing, and strategic advertising — strengthening your visibility, connecting you with your audience, and generating traction that drives measurable results.
-              We don't chase attention. We craft it.
-            </p> */}
-
             <span className="text-[#D9A021] text-[10px] font-bold uppercase tracking-widest block">
               Who we are
             </span>
@@ -691,15 +685,7 @@ export default function BrandShiftMediaHome() {
               graphic design so you can focus on what you do best.
             </p>
 
-            {/* <span className="text-[#D9A021] text-[10px] font-bold uppercase tracking-widest block">
-              
-            </span>
-            
-            <p className="text-gray-400 text-sm sm:text-base leading-relaxed max-w-2xl">
-              
-            </p> */}
-
-            <motion.div className="my-7 p-6 bg-[rgba(212,160,48,0.07)] border-l-3 border-[#D4A030] font-syne text-base font-bold text-[#D4A030] italic leading-snug">
+            <motion.div className="my-7 p-6 bg-[rgba(212,160,48,0.07)] border-l-3 border-brand-gold font-syne text-base font-bold text-brand-gold italic leading-snug">
               {`"We don't just manage your social. We shift your entire digital
               identity."`}
             </motion.div>
@@ -717,13 +703,15 @@ export default function BrandShiftMediaHome() {
                   borderColor: "rgba(234, 179, 8, 0.2)",
                 }}
                 transition={{ duration: 0.5, delay: idx * 0.1 }}
-                className="bg-white/2 border border-white/5 backdrop-blur-md rounded-2xl p-6 flex flex-col justify-center items-start transition-all duration-300 relative group"
+                className={`border ${counter.bg} border-white/5 backdrop-blur-md rounded-2xl p-6 flex flex-col justify-center items-start transition-all duration-300 relative text-white group`}
               >
-                <div className="absolute top-2 right-2 w-1.5 h-1.5 rounded-full bg-white/10 group-hover:bg-[#DD4322] transition-colors" />
-                <span className="text-4xl sm:text-5xl font-black text-white tracking-tighter block mb-1">
+                <div
+                  className={`absolute top-2 right-2 w-1.5 h-1.5 rounded-full group-hover:bg-[#DD4322] transition-colors`}
+                />
+                <span className="text-4xl sm:text-5xl font-black tracking-tighter block mb-1">
                   {counter.value}
                 </span>
-                <span className="text-[10px] text-gray-400 font-bold tracking-widest uppercase">
+                <span className="text-[10px] font-bold tracking-widest uppercase">
                   {counter.label}
                 </span>
               </motion.div>
@@ -809,11 +797,12 @@ export default function BrandShiftMediaHome() {
 
         <div className="max-w-7xl mx-auto px-6 mb-16 flex flex-col md:flex-row md:items-end justify-between gap-8">
           <div className="space-y-4">
-            <span className="text-#D9A021 text-[10px] font-bold uppercase tracking-widest block">
+            <span className="text-[#D9A021] text-[10px] font-bold uppercase tracking-widest block">
               Our Selected Work Portfolio
             </span>
             <h2 className="text-3xl sm:text-6xl font-black tracking-tight text-white">
-              Visual Case Implementations
+              Visual Case{" "}
+              <span className="text-[#D9A021]">Implementations</span>
             </h2>
           </div>
 
@@ -828,8 +817,8 @@ export default function BrandShiftMediaHome() {
                 onClick={() => setActiveCategory(category)}
                 className={`text-[10px] font-bold uppercase tracking-widest px-6 py-3 cursor-pointer rounded-full border whitespace-nowrap transition-all duration-300 focus:outline-none focus:ring-1 focus:ring-amber-500 ${
                   activeCategory === category
-                    ? "bg-white text-black border-white shadow-lg"
-                    : "bg-transparent text-gray-400 border-white/5 hover:border-white/20 hover:text-white"
+                    ? "bg-[#D9A021] text-black border-white shadow-lg"
+                    : "bg-transparent text-gray-400 border-[#DD4322] hover:border-[#DD7107] hover:text-white"
                 }`}
               >
                 {category}
@@ -915,7 +904,8 @@ export default function BrandShiftMediaHome() {
               Why Choose Us
             </span>
             <h2 className="text-3xl sm:text-6xl font-black tracking-tight text-white leading-[1.05]">
-              Other agencies make content. We build momentum.
+              Other agencies make content.{" "}
+              <span className="text-[#D9A021]">We build momentum.</span>
             </h2>
             <p className="text-gray-400 text-xs sm:text-sm leading-relaxed">
               The difference between a brand that drifts and a brand that moves
@@ -1292,7 +1282,7 @@ export default function BrandShiftMediaHome() {
                     href="mailto:craftraction@gmail.com"
                     className="text-sm text-gray-400 hover:text-amber-500 transition-colors block mt-1"
                   >
-                    thebrandshiftmedia@gmail.com
+                    craftraction@gmail.com
                   </a>
                 </div>
               </div>
