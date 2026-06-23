@@ -674,7 +674,7 @@ export default function BrandShiftMediaHome() {
             </span>
 
             <h2 className="text-3xl sm:text-6xl font-black tracking-tight text-white leading-[1.05]">
-              Built for Busy Business Owners.
+              Built for <br /><span className="text-[#D9A021]">Busy Business Owners.</span>
             </h2>
 
             <p className="text-gray-400 text-sm sm:text-base leading-relaxed max-w-2xl">
@@ -740,7 +740,7 @@ export default function BrandShiftMediaHome() {
               Our Services
             </span>
             <h2 className="text-3xl sm:text-6xl font-black tracking-tight text-white">
-              Everything Your Brand Needs. One Roof.
+              Everything Your Brand Needs. <span className="text-[#D9A021]">One Roof.</span>
             </h2>
             <p className="text-gray-400 text-xs sm:text-sm max-w-lg mx-auto">
               Stop juggling vendors. From your first logo to your first viral
@@ -798,7 +798,7 @@ export default function BrandShiftMediaHome() {
         <div className="max-w-7xl mx-auto px-6 mb-16 flex flex-col md:flex-row md:items-end justify-between gap-8">
           <div className="space-y-4">
             <span className="text-[#D9A021] text-[10px] font-bold uppercase tracking-widest block">
-              Our Selected Work Portfolio
+              Our Selected Work <span className="text-[#D9A021]">Portfolio</span>
             </span>
             <h2 className="text-3xl sm:text-6xl font-black tracking-tight text-white">
               Visual Case{" "}
