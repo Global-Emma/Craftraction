@@ -55,10 +55,30 @@ export default function BrandShiftMediaHome() {
 
   // --- Mock Data ---
   const counters = [
-    { value: "50+", label: "Brands Transformed", bg: "bg-[#DD7107]", text: "text-[#DD4322]" },
-    { value: "5", label: "Countries Served", bg: "bg-[#DD4322]", text: "text-[#D9A021]" },
-    { value: "8", label: "Services Under One Roof", bg: "bg-[#D9A021]", text: "text-[#DD7107]" },
-    { value: "₦60k", label: "Starting Price", bg: "bg-[#00000]", text: "text-[#DD4322]" },
+    {
+      value: "50+",
+      label: "Brands Transformed",
+      bg: "bg-[#DD7107]",
+      text: "text-[#DD4322]",
+    },
+    {
+      value: "5",
+      label: "Countries Served",
+      bg: "bg-[000000]",
+      text: "text-[#D9A021]",
+    },
+    {
+      value: "8",
+      label: "Services Under One Roof",
+      bg: "bg-[#D9A021]",
+      text: "text-[#DD7107]",
+    },
+    {
+      value: "80+",
+      label: "Happy Clients",
+      bg: "bg-[#DD4322]",
+      text: "text-[#DD4322]",
+    },
   ];
 
   const containerVariants = {
@@ -554,80 +574,80 @@ export default function BrandShiftMediaHome() {
         <div className="absolute inset-0 pointer-events-none z-0 bg-[radial-gradient(ellipse_60%_70%_at_80%_30%,rgba(212,160,48,0.08)_0%,transparent_60%),radial-gradient(ellipse_40%_50%_at_10%_80%,rgba(240,100,40,0.05)_0%,transparent_60%)]" />
 
         {/* <div className="max-w-[1280px] mx-auto w-full grid grid-cols-1 md:grid-cols-2 gap-20 items-center relative z-10"> */}
-          <div className="max-w-5xl mx-auto text-center relative z-10 space-y-4">
-            <motion.div
-              initial={{ opacity: 0, scale: 0.9 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.6 }}
-            >
-              <span className="inline-block border border-white/10 text-white bg-white/5 backdrop-blur-md px-5 py-2 rounded-full text-[10px] font-bold tracking-widest uppercase mb-4 relative group overflow-hidden">
-                <span className="absolute inset-x-0 bottom-0 h-px bg-linear-to-r from-[#DD4322] via-[#D9A021] to-[#DD7107] animate-pulse" />
-                Bringing Your Brand To Life
-              </span>
-            </motion.div>
+        <div className="max-w-5xl mx-auto text-center relative z-10 space-y-4">
+          <motion.div
+            initial={{ opacity: 0, scale: 0.9 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.6 }}
+          >
+            <span className="inline-block border border-white/10 text-white bg-white/5 backdrop-blur-md px-5 py-2 rounded-full text-[10px] font-bold tracking-widest uppercase mb-4 relative group overflow-hidden">
+              <span className="absolute inset-x-0 bottom-0 h-px bg-linear-to-r from-[#DD4322] via-[#D9A021] to-[#DD7107] animate-pulse" />
+              Bringing Your Brand To Life
+            </span>
+          </motion.div>
 
-            <motion.h1
-              initial={{ opacity: 0, y: 40 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
-              className="text-4xl sm:text-7xl md:text-8xl font-black tracking-tighter text-white mb-6 leading-[0.95]"
-            >
-              We Build Brands That <br className="sm:inline" />
-              <span className="bg-linear-to-r from-[#DD4322] via-[#D9A021] to-[#DD7107] bg-clip-text text-transparent inline-flex text-center items-center justify-center min-h-[1.1em] hover:scale-[1.02] transition-transform duration-500 cursor-default relative">
-                <TypewriterPhrases />
-                {/* Animated Typing Blinking Cursor */}
-                <motion.span
-                  animate={{ opacity: [1, 0, 1] }}
-                  transition={{
-                    duration: 0.8,
-                    repeat: Infinity,
-                    ease: "linear",
-                  }}
-                  className="inline-block ml-1 w-2 h-10 sm:h-16 md:h-20 bg-amber-500 align-middle self-center"
-                />
-              </span>
-            </motion.h1>
+          <motion.h1
+            initial={{ opacity: 0, y: 40 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
+            className="text-4xl sm:text-7xl md:text-8xl font-black tracking-tighter text-white mb-6 leading-[0.95]"
+          >
+            We Build Brands That <br className="sm:inline" />
+            <span className="bg-linear-to-r from-[#DD4322] via-[#D9A021] to-[#DD7107] bg-clip-text text-transparent inline-flex text-center items-center justify-center min-h-[1.1em] hover:scale-[1.02] transition-transform duration-500 cursor-default relative">
+              <TypewriterPhrases />
+              {/* Animated Typing Blinking Cursor */}
+              <motion.span
+                animate={{ opacity: [1, 0, 1] }}
+                transition={{
+                  duration: 0.8,
+                  repeat: Infinity,
+                  ease: "linear",
+                }}
+                className="inline-block ml-1 w-2 h-10 sm:h-16 md:h-20 bg-amber-500 align-middle self-center"
+              />
+            </span>
+          </motion.h1>
 
-            <motion.p
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.2 }}
-              className="text-sm sm:text-lg text-gray-400 max-w-2xl mx-auto mb-12 leading-relaxed font-normal"
-            >
-              Craftraction is a creative and digital agency built for brands
-              that refuse to be ignored. We shape your digital presence through
-              branding, web development, digital marketing, and strategic
-              advertising — strengthening your visibility, connecting you with
-              your audience, and generating traction that drives measurable
-              results. We do not chase attention. We craft it.
-            </motion.p>
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+            className="text-sm sm:text-lg text-gray-400 max-w-2xl mx-auto mb-12 leading-relaxed font-normal"
+          >
+            Craftraction is a creative and digital agency built for brands that
+            refuse to be ignored. We shape your digital presence through
+            branding, web development, digital marketing, and strategic
+            advertising — strengthening your visibility, connecting you with
+            your audience, and generating traction that drives measurable
+            results. We do not chase attention. We craft it.
+          </motion.p>
 
-            {/* Accessible Action Controls */}
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.4 }}
-              className="flex flex-col sm:flex-row items-center justify-center gap-4 w-full sm:w-auto pt-4"
+          {/* Accessible Action Controls */}
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.4 }}
+            className="flex flex-col sm:flex-row items-center justify-center gap-4 w-full sm:w-auto pt-4"
+          >
+            <Link
+              href="#contact"
+              className="w-full sm:w-52 bg-[#DD4322] text-white font-bold text-xs uppercase tracking-widest px-8 py-5 rounded-full hover:bg-white hover:text-black transition-all duration-500 flex items-center justify-center gap-2 shadow-xl shadow-[#DD4322]/10 group focus:outline-none focus:ring-2 focus:ring-amber-500"
             >
-              <Link
-                href="#contact"
-                className="w-full sm:w-52 bg-[#DD4322] text-white font-bold text-xs uppercase tracking-widest px-8 py-5 rounded-full hover:bg-white hover:text-black transition-all duration-500 flex items-center justify-center gap-2 shadow-xl shadow-[#DD4322]/10 group focus:outline-none focus:ring-2 focus:ring-amber-500"
-              >
-                <span>Book Studio</span>
-                <ArrowUpRight className="w-4 h-4 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform duration-300" />
-              </Link>
-              <Link
-                href="#portfolio"
-                className="w-full sm:w-52 bg-transparent text-white border border-white/10 font-bold text-xs uppercase tracking-widest px-8 py-5 rounded-full hover:bg-white/5 hover:border-white transition-all duration-500 flex items-center justify-center focus:outline-none relative overflow-hidden group"
-              >
-                <span className="absolute inset-x-0 top-0 h-px bg-linear-to-r from-[#DD4322] via-[#D9A021] to-[#DD7107]" />
-                View Work
-              </Link>
-            </motion.div>
-          </div>
+              <span>Book Studio</span>
+              <ArrowUpRight className="w-4 h-4 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform duration-300" />
+            </Link>
+            <Link
+              href="#portfolio"
+              className="w-full sm:w-52 bg-transparent text-white border border-white/10 font-bold text-xs uppercase tracking-widest px-8 py-5 rounded-full hover:bg-white/5 hover:border-white transition-all duration-500 flex items-center justify-center focus:outline-none relative overflow-hidden group"
+            >
+              <span className="absolute inset-x-0 top-0 h-px bg-linear-to-r from-[#DD4322] via-[#D9A021] to-[#DD7107]" />
+              View Work
+            </Link>
+          </motion.div>
+        </div>
 
-          {/* FLOATING ICON GRAPHIC LOGO BACKGROUND */}
-          {/* <motion.div
+        {/* FLOATING ICON GRAPHIC LOGO BACKGROUND */}
+        {/* <motion.div
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 1.2, delay: 0.5 }}
@@ -674,7 +694,8 @@ export default function BrandShiftMediaHome() {
             </span>
 
             <h2 className="text-3xl sm:text-6xl font-black tracking-tight text-white leading-[1.05]">
-              Built for <br /><span className="text-[#D9A021]">Busy Business Owners.</span>
+              Built for <br />
+              <span className="text-[#D9A021]">Busy Business Owners.</span>
             </h2>
 
             <p className="text-gray-400 text-sm sm:text-base leading-relaxed max-w-2xl">
@@ -684,6 +705,21 @@ export default function BrandShiftMediaHome() {
               media and content, to advertising, branding, videography, and
               graphic design so you can focus on what you do best.
             </p>
+
+            <span className="text-[#D9A021] text-[10px] font-bold uppercase tracking-widest block">
+              What We Do
+            </span>
+<p className="text-gray-400 text-sm sm:text-base leading-relaxed max-w-2xl">
+              Craftraction handles every layer of your digital presence.
+              Bridging cutting-edged creativity and predictable digital
+              solutions. We step outside traditional agency architecture to
+              create innovative digital solutions. We redefine hoe your
+              customers interact wth your products by infusing hyper clean
+              branding, enterprise website positioning, high-impact printing,
+              brand visibility and strategic advertising into your daily
+              framework.
+            </p>
+
 
             <motion.div className="my-7 p-6 bg-[rgba(212,160,48,0.07)] border-l-3 border-brand-gold font-syne text-base font-bold text-brand-gold italic leading-snug">
               {`"We don't just manage your social. We shift your entire digital
@@ -740,7 +776,8 @@ export default function BrandShiftMediaHome() {
               Our Services
             </span>
             <h2 className="text-3xl sm:text-6xl font-black tracking-tight text-white">
-              Everything Your Brand Needs. <span className="text-[#D9A021]">One Roof.</span>
+              Everything Your Brand Needs.{" "}
+              <span className="text-[#D9A021]">One Roof.</span>
             </h2>
             <p className="text-gray-400 text-xs sm:text-sm max-w-lg mx-auto">
               Stop juggling vendors. From your first logo to your first viral
@@ -798,7 +835,8 @@ export default function BrandShiftMediaHome() {
         <div className="max-w-7xl mx-auto px-6 mb-16 flex flex-col md:flex-row md:items-end justify-between gap-8">
           <div className="space-y-4">
             <span className="text-[#D9A021] text-[10px] font-bold uppercase tracking-widest block">
-              Our Selected Work <span className="text-[#D9A021]">Portfolio</span>
+              Our Selected Work{" "}
+              <span className="text-[#D9A021]">Portfolio</span>
             </span>
             <h2 className="text-3xl sm:text-6xl font-black tracking-tight text-white">
               Visual Case{" "}
