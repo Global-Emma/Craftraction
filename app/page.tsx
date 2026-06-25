@@ -54,7 +54,7 @@ export default function BrandShiftMediaHome() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState<boolean>(false);
   const [activeCategory, setActiveCategory] = useState<string>("All");
   const [formSubmitted, setFormSubmitted] = useState<boolean>(false);
-  const [currency, setCurrency] = useState<"NGN" | "USD">("NGN");
+  // const [currency, setCurrency] = useState<"NGN" | "USD">("NGN");
   const [openFaq, setOpenFaq] = useState<number | null>(null);
 
   // --- Mock Data ---
@@ -653,7 +653,7 @@ export default function BrandShiftMediaHome() {
             Craftraction is a creative and digital agency built for brands that
             refuse to be ignored. We shape your digital presence through
             branding, web development, digital marketing, and strategic
-            advertising and generating traction that drives measurable
+            advertising - generating traction that drives measurable
             results. We do not chase attention. We craft it.
           </motion.p>
 
@@ -733,7 +733,7 @@ export default function BrandShiftMediaHome() {
               <span className="text-[#D9A021]">Busy Business Owners.</span>
             </h2>
 
-            <p className="text-gray-400 text-sm sm:text-base leading-relaxed max-w-2xl">
+            <p className="text-gray-400 text-sm text-justify sm:text-base leading-relaxed max-w-2xl">
               We are built for busy business owners who are too busy running
               their company to manage their online presence. We become your
               behind-the-scenes digital team, handling everything from social
@@ -809,8 +809,7 @@ export default function BrandShiftMediaHome() {
             <p className="text-gray-400 text-xs sm:text-sm max-w-lg mx-auto">
               Stop juggling vendors. From your first logo to your first viral
               post to your first ad campaign, Craftraction handles every layer
-              of your digital presence. Craftraction handles every layer of your
-              digital presence. Bridging cutting-edged creativity and
+              of your digital presence. Bridging cutting-edged creativity and
               predictable digital solutions. We step outside traditional agency
               architecture to create innovative digital solutions. We redefine
               hoe your customers interact wth your products by infusing hyper
@@ -834,8 +833,8 @@ export default function BrandShiftMediaHome() {
                   key={index}
                   className="bg-white/1 border border-white/5 rounded-2xl p-8 hover:border-[#DD4322]/30 hover:bg-white/3 transition-all duration-500 group flex flex-col justify-between relative overflow-hidden"
                 >
-                  <div className="absolute top-0 right-0 w-24 h-24 bg-linear-to-r from-[#DD4322] via-[#D9A021] to-[#DD7107] pointer-events-none rounded-bl-full group-hover:from-amber-500/3 transition-all">
-                    {/* <Image src={"/images/logo_icon.png"} alt="icon" height={100} width={100} /> */}
+                  <div className="absolute top-0 right-0 w-24 h-24 pointer-events-none rounded-bl-full group-hover:from-amber-500/3 transition-all">
+                    <Image src={"/images/logo_icon.png"} alt="icon" height={100} width={100} />
                   </div>
                   <div>
                     <div className="w-12 h-12 bg-white/5 border border-white/10 text-white rounded-xl flex items-center justify-center mb-8 group-hover:bg-[#DD4322] group-hover:border-[#DD4322] group-hover:text-white transition-all duration-300 group-hover:rotate-6">
@@ -965,8 +964,9 @@ export default function BrandShiftMediaHome() {
         viewport={{ once: false, amount: 0.1 }}
         layout
         id="why-us"
-        className="py-32 px-6 bg-[#030303] border-t border-b border-white/5 relative"
+        className="py-32 px-6 bg-linear-to-r from-[#DD4322] to-[#DD7107] border-t border-b border-white/5 relative"
       >
+        
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
           <motion.div
             className="lg:col-span-5 space-y-6"
@@ -974,14 +974,14 @@ export default function BrandShiftMediaHome() {
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <span className="text-[#D9A021] text-[10px] tracking-[5px] font-bold uppercase block">
+            <span className="text-[#000000] text-[10px] tracking-[5px] font-bold uppercase block">
               Why Choose Us
             </span>
             <h2 className="text-2xl sm:text-5xl font-black tracking-tight text-white leading-[1.05]">
               Other agencies make content.{" "}
-              <span className="text-[#D9A021]">We build momentum.</span>
+              <span className="text-[#000000]">We build momentum.</span>
             </h2>
-            <p className="text-gray-400 text-xs sm:text-sm leading-relaxed">
+            <p className="text-[#000000b6] text-justify text-xs sm:text-sm leading-relaxed">
               The difference between a brand that drifts and a brand that moves
               is intentional creative force. We bring strategic thinking to
               every brief, bold execution to every project, and relentless
@@ -1002,16 +1002,16 @@ export default function BrandShiftMediaHome() {
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="bg-white/1 border border-white/5 hover:border-white/10 p-6 rounded-2xl space-y-4 transition-all duration-300 relative group"
+                className="bg-black border border-white/5 hover:border-white/10 p-6 rounded-2xl space-y-4 transition-all duration-300 relative group"
               >
-                <div className="w-8 h-8 bg-white/5 text-white border border-white/10 rounded-lg flex items-center justify-center group-hover:text-[#D9A021] group-hover:border-[#D9A021]/30 transition-colors">
+                <div className="w-8 h-8 bg-white/2 text-[#DD4322] border border-white/10 rounded-lg flex items-center justify-center group-hover:text-[#ffffff] group-hover:border-[#DD4322]/30 transition-colors">
                   <CheckCircle2 className="w-4 h-4" />
                 </div>
                 <div className="space-y-1">
-                  <h3 className="text-base font-bold text-white tracking-tight">
+                  <h3 className="text-base font-bold text-[#D9A021] tracking-tight">
                     {item.title}
                   </h3>
-                  <p className="text-gray-400 text-xs sm:text-sm leading-relaxed">
+                  <p className="text-[#ffffffdc] text-xs sm:text-sm leading-relaxed">
                     {item.desc}
                   </p>
                 </div>
