@@ -4,8 +4,8 @@ import { motion, animate, useMotionValue, useTransform } from "framer-motion";
 function TypewriterPhrases() {
   const [phrases] = useState([
     "Shift",
-    "Scales",
-    "Gains Traction",
+    "Scale",
+    "Gain Traction",
     "Command Attention",
     "Dominate Markets"
   ]);

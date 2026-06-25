@@ -24,6 +24,10 @@ import {
   X,
   // Star,
 } from "lucide-react";
+import { FaInstagramSquare } from "react-icons/fa";
+import { FaTiktok } from "react-icons/fa";
+import { BiLogoGmail } from "react-icons/bi";
+import { FaWhatsapp } from "react-icons/fa";
 import Marquee from "@/components/marquee";
 import TypewriterPhrases from "@/components/TypingPhrases";
 
@@ -101,6 +105,38 @@ export default function BrandShiftMediaHome() {
     // "Why Us",
     // "Process",
     "Contact",
+  ];
+
+  const processSteps = [
+    {
+      num: "01",
+
+      label: "Ideate.",
+
+      barColor: "#D9A021",
+
+      desc: "We deep dive into your business, your audience and your goals before a single pixel is touched. Strategy first. Always. We don't guess, we learn your brand and build from there.",
+    },
+
+    {
+      num: "02",
+
+      label: "Create.",
+
+      barColor: "#DD4322",
+
+      desc: "Fast briefs, faster turnarounds, zero compromises on quality. Every visual, every word, every campaign is built with your growth in mind and executed with precision.",
+    },
+
+    {
+      num: "03",
+
+      label: "Shift.",
+
+      barColor: "#DD7107",
+
+      desc: "We launch, we monitor, we optimise. We keep pushing until your brand is moving the way it should. This is not a one-time delivery, this is momentum built and maintained every single day.",
+    },
   ];
 
   const faqs = [
@@ -194,66 +230,66 @@ export default function BrandShiftMediaHome() {
     "Digital Marketing",
   ];
 
-  const pricingPackages = [
-    {
-      tier: "Starter",
-      name: "Launch Pack",
-      tag: "For new businesses ready to show up properly.",
-      priceNgn: "₦210k",
-      priceUsd: "$350",
-      period: "One-time project",
-      list: [
-        "Brand Identity (logo + colours + fonts + guidelines)",
-        "Social media profile setup and management (1 platform)",
-        "7 custom flyers",
-        "2 rounds of revisions",
-      ],
-      theme: "bg-[#D9A02124] text-[#FFF8F0] border-[#DD4322]",
-      btnStyle: "bg-[#D9A021] text-[#090806] hover:bg-[#F0BC40]",
-      pop: false,
-    },
-    {
-      tier: "Growth",
-      name: "Scale Pack",
-      tag: "For businesses ready to grow with intention.",
-      priceNgn: "₦650k",
-      priceUsd: "$950",
-      period: "One-time + 1 month support",
-      list: [
-        "Full Brand Identity System",
-        "5-page custom website",
-        "Landing page",
-        "1 month social media management",
-        "Brand video shoot",
-        "3 ad creatives",
-        "Full brand guidelines",
-        "3 rounds of revisions",
-      ],
-      theme: "bg-[#DD4322] text-[#090806]",
-      btnStyle: "bg-[#090806] text-[#D9A021] hover:bg-[#1A1208]",
-      pop: true,
-    },
-    {
-      tier: "Premium",
-      name: "Authority Pack",
-      tag: "For established brands that want to dominate.",
-      priceNgn: "₦1.2M",
-      priceUsd: "$1,800",
-      period: "Project + 3 months retainer",
-      list: [
-        "Complete Brand Identity System",
-        "Full Brand Strategy",
-        "3 months social media management",
-        "Professional video production",
-        "Paid Ads setup + 1 month management",
-        "CAC Registration included",
-        "Unlimited revisions",
-      ],
-      theme: "bg-[#DD7107] text-[#FFFFFF]",
-      btnStyle: "bg-[#FFFFFF] text-[#F06428] hover:opacity-90",
-      pop: false,
-    },
-  ];
+  // const pricingPackages = [
+  //   {
+  //     tier: "Starter",
+  //     name: "Launch Pack",
+  //     tag: "For new businesses ready to show up properly.",
+  //     priceNgn: "₦210k",
+  //     priceUsd: "$350",
+  //     period: "One-time project",
+  //     list: [
+  //       "Brand Identity (logo + colours + fonts + guidelines)",
+  //       "Social media profile setup and management (1 platform)",
+  //       "7 custom flyers",
+  //       "2 rounds of revisions",
+  //     ],
+  //     theme: "bg-[#D9A02124] text-[#FFF8F0] border-[#DD4322]",
+  //     btnStyle: "bg-[#D9A021] text-[#090806] hover:bg-[#F0BC40]",
+  //     pop: false,
+  //   },
+  //   {
+  //     tier: "Growth",
+  //     name: "Scale Pack",
+  //     tag: "For businesses ready to grow with intention.",
+  //     priceNgn: "₦650k",
+  //     priceUsd: "$950",
+  //     period: "One-time + 1 month support",
+  //     list: [
+  //       "Full Brand Identity System",
+  //       "5-page custom website",
+  //       "Landing page",
+  //       "1 month social media management",
+  //       "Brand video shoot",
+  //       "3 ad creatives",
+  //       "Full brand guidelines",
+  //       "3 rounds of revisions",
+  //     ],
+  //     theme: "bg-[#DD4322] text-[#090806]",
+  //     btnStyle: "bg-[#090806] text-[#D9A021] hover:bg-[#1A1208]",
+  //     pop: true,
+  //   },
+  //   {
+  //     tier: "Premium",
+  //     name: "Authority Pack",
+  //     tag: "For established brands that want to dominate.",
+  //     priceNgn: "₦1.2M",
+  //     priceUsd: "$1,800",
+  //     period: "Project + 3 months retainer",
+  //     list: [
+  //       "Complete Brand Identity System",
+  //       "Full Brand Strategy",
+  //       "3 months social media management",
+  //       "Professional video production",
+  //       "Paid Ads setup + 1 month management",
+  //       "CAC Registration included",
+  //       "Unlimited revisions",
+  //     ],
+  //     theme: "bg-[#DD7107] text-[#FFFFFF]",
+  //     btnStyle: "bg-[#FFFFFF] text-[#F06428] hover:opacity-90",
+  //     pop: false,
+  //   },
+  // ];
 
   const portfolioItems: PortfolioItem[] = [
     {
@@ -590,7 +626,7 @@ export default function BrandShiftMediaHome() {
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
-            className="text-4xl sm:text-7xl md:text-8xl font-black tracking-tighter text-white mb-6 leading-[0.95]"
+            className="text-2xl sm:text-5xl md:text-6xl font-black tracking-tighter text-white mb-6 leading-[0.95]"
           >
             We Build Brands That <br className="sm:inline" />
             <span className="bg-linear-to-r from-[#DD4322] via-[#D9A021] to-[#DD7107] bg-clip-text text-transparent inline-flex text-center items-center justify-center min-h-[1.1em] hover:scale-[1.02] transition-transform duration-500 cursor-default relative">
@@ -612,13 +648,12 @@ export default function BrandShiftMediaHome() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="text-sm sm:text-lg text-gray-400 max-w-2xl mx-auto mb-12 leading-relaxed font-normal"
+            className="text-md sm:text-lg text-gray-400 max-w-2xl mx-auto mb-12 leading-relaxed font-normal"
           >
             Craftraction is a creative and digital agency built for brands that
             refuse to be ignored. We shape your digital presence through
             branding, web development, digital marketing, and strategic
-            advertising — strengthening your visibility, connecting you with
-            your audience, and generating traction that drives measurable
+            advertising and generating traction that drives measurable
             results. We do not chase attention. We craft it.
           </motion.p>
 
@@ -689,11 +724,11 @@ export default function BrandShiftMediaHome() {
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <span className="text-[#D9A021] text-[10px] font-bold uppercase tracking-widest block">
+            <span className="text-[#D9A021] text-[10px] font-bold uppercase tracking-[5px] block">
               Who we are
             </span>
 
-            <h2 className="text-3xl sm:text-6xl font-black tracking-tight text-white leading-[1.05]">
+            <h2 className="text-2xl sm:text-5xl font-black tracking-tight text-white leading-[1.05]">
               Built for <br />
               <span className="text-[#D9A021]">Busy Business Owners.</span>
             </h2>
@@ -706,20 +741,12 @@ export default function BrandShiftMediaHome() {
               graphic design so you can focus on what you do best.
             </p>
 
-            <span className="text-[#D9A021] text-[10px] font-bold uppercase tracking-widest block">
+            {/* <span className="text-[#D9A021] text-[10px] font-bold uppercase tracking-widest block">
               What We Do
             </span>
 <p className="text-gray-400 text-sm sm:text-base leading-relaxed max-w-2xl">
-              Craftraction handles every layer of your digital presence.
-              Bridging cutting-edged creativity and predictable digital
-              solutions. We step outside traditional agency architecture to
-              create innovative digital solutions. We redefine hoe your
-              customers interact wth your products by infusing hyper clean
-              branding, enterprise website positioning, high-impact printing,
-              brand visibility and strategic advertising into your daily
-              framework.
-            </p>
-
+              
+            </p> */}
 
             <motion.div className="my-7 p-6 bg-[rgba(212,160,48,0.07)] border-l-3 border-brand-gold font-syne text-base font-bold text-brand-gold italic leading-snug">
               {`"We don't just manage your social. We shift your entire digital
@@ -772,17 +799,24 @@ export default function BrandShiftMediaHome() {
 
         <div className="max-w-7xl mx-auto relative z-10">
           <div className="text-center max-w-2xl mx-auto mb-24 space-y-4">
-            <span className="text-amber-500 text-[10px] font-bold uppercase tracking-widest block">
-              Our Services
+            <span className="text-[#D9A021] text-[10px] font-bold uppercase tracking-[5px] block">
+              What We Do
             </span>
-            <h2 className="text-3xl sm:text-6xl font-black tracking-tight text-white">
+            <h2 className="text-2xl sm:text-5xl font-black tracking-tight text-white">
               Everything Your Brand Needs.{" "}
               <span className="text-[#D9A021]">One Roof.</span>
             </h2>
             <p className="text-gray-400 text-xs sm:text-sm max-w-lg mx-auto">
               Stop juggling vendors. From your first logo to your first viral
               post to your first ad campaign, Craftraction handles every layer
-              of your digital presence.
+              of your digital presence. Craftraction handles every layer of your
+              digital presence. Bridging cutting-edged creativity and
+              predictable digital solutions. We step outside traditional agency
+              architecture to create innovative digital solutions. We redefine
+              hoe your customers interact wth your products by infusing hyper
+              clean branding, enterprise website positioning, high-impact
+              printing, brand visibility and strategic advertising into your
+              daily framework.
             </p>
           </div>
 
@@ -800,7 +834,9 @@ export default function BrandShiftMediaHome() {
                   key={index}
                   className="bg-white/1 border border-white/5 rounded-2xl p-8 hover:border-[#DD4322]/30 hover:bg-white/3 transition-all duration-500 group flex flex-col justify-between relative overflow-hidden"
                 >
-                  <div className="absolute top-0 right-0 w-24 h-24 bg-linear-to-r from-[#DD4322] via-[#D9A021] to-[#DD7107] pointer-events-none rounded-bl-full group-hover:from-amber-500/3 transition-all" />
+                  <div className="absolute top-0 right-0 w-24 h-24 bg-linear-to-r from-[#DD4322] via-[#D9A021] to-[#DD7107] pointer-events-none rounded-bl-full group-hover:from-amber-500/3 transition-all">
+                    {/* <Image src={"/images/logo_icon.png"} alt="icon" height={100} width={100} /> */}
+                  </div>
                   <div>
                     <div className="w-12 h-12 bg-white/5 border border-white/10 text-white rounded-xl flex items-center justify-center mb-8 group-hover:bg-[#DD4322] group-hover:border-[#DD4322] group-hover:text-white transition-all duration-300 group-hover:rotate-6">
                       <IconComp className="w-5 h-5" strokeWidth={1.5} />
@@ -834,11 +870,11 @@ export default function BrandShiftMediaHome() {
 
         <div className="max-w-7xl mx-auto px-6 mb-16 flex flex-col md:flex-row md:items-end justify-between gap-8">
           <div className="space-y-4">
-            <span className="text-[#D9A021] text-[10px] font-bold uppercase tracking-widest block">
+            <span className="text-[#D9A021] text-[10px] font-bold uppercase tracking-[5px] block">
               Our Selected Work{" "}
               <span className="text-[#D9A021]">Portfolio</span>
             </span>
-            <h2 className="text-3xl sm:text-6xl font-black tracking-tight text-white">
+            <h2 className="text-2xl sm:text-5xl font-black tracking-tight text-white">
               Visual Case{" "}
               <span className="text-[#D9A021]">Implementations</span>
             </h2>
@@ -938,10 +974,10 @@ export default function BrandShiftMediaHome() {
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <span className="text-amber-500 text-[10px] font-bold uppercase tracking-widest block">
+            <span className="text-[#D9A021] text-[10px] tracking-[5px] font-bold uppercase block">
               Why Choose Us
             </span>
-            <h2 className="text-3xl sm:text-6xl font-black tracking-tight text-white leading-[1.05]">
+            <h2 className="text-2xl sm:text-5xl font-black tracking-tight text-white leading-[1.05]">
               Other agencies make content.{" "}
               <span className="text-[#D9A021]">We build momentum.</span>
             </h2>
@@ -991,7 +1027,7 @@ export default function BrandShiftMediaHome() {
       {/* Testimonials section remained fully commented as per the source parameters rule */}
 
       {/* --- 7. PROCESS SECTION --- */}
-      <motion.section
+      {/* <motion.section
         variants={containerVariants}
         initial="hidden"
         whileInView="visible"
@@ -1032,9 +1068,59 @@ export default function BrandShiftMediaHome() {
             ))}
           </div>
         </div>
-      </motion.section>
+      </motion.section> */}
 
       <section
+        id="process"
+        className="bg-white/2 py-24 px-6 md:px-12 border-t border-[rgba(212,160,48,0.14)] relative z-10"
+      >
+        <div className="max-w-[1280px] mx-auto">
+          <div className="text-[10px] tracking-[5px] uppercase text-white font-semibold mb-3.5 flex items-center gap-3">
+            <span className="text-[#D9A021] block"> How We Work</span>
+          </div>
+
+          <h2 className="font-syne text-[clamp(28px,4vw,50px)] font-extrabold tracking-tight leading-[1.06] text-white mb-4">
+            Ideate. Create. <span className="text-[#D9A021]">Shift.</span>
+          </h2>
+
+          <p className="text-[15px] text-[rgba(255,248,240,0.55)] font-light max-w-[520px] leading-relaxed mb-14">
+            {`Every engagement starts with understanding what's holding your brand
+
+            back. Then we move.`}
+          </p>
+
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-1">
+            {processSteps.map((step, i) => (
+              <div
+                key={i}
+                className={`bg-black border border-white/2 p-12 relative overflow-hidden transition-all duration-30 hover:border-[${step.barColor}] hover:-translate-y-1 group`}
+              >
+                <span className="absolute bottom-4 right-5 font-syne text-[64px] font-extrabold text-white/[0.03] leading-none select-none group-hover:scale-105 transition-transform">
+                  {step.num}
+                </span>
+
+                <div
+                  className="font-syne text-3xl font-extrabold tracking-tight mb-2"
+                  style={{ color: step.barColor }}
+                >
+                  {step.label}
+                </div>
+
+                <div
+                  className="w-12 h-[3px] mb-6 transition-all duration-300 group-hover:w-20"
+                  style={{ backgroundColor: step.barColor }}
+                />
+
+                <p className="text-sm text-[rgba(255,248,240,0.55)] font-light leading-relaxed relative z-10">
+                  {step.desc}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* <section
         id="pricing"
         className="bg-black py-24 px-6 md:px-12 border-t border-[rgba(212,160,48,0.14)] relative z-10"
       >
@@ -1052,7 +1138,7 @@ export default function BrandShiftMediaHome() {
             brand is right now.
           </p>
 
-          {/* CURRENCY CONTROLLER SWITCH */}
+          CURRENCY CONTROLLER SWITCH
           <div className="flex border rounded-xl border-[rgba(212,160,48,0.14)] w-fit mb-10 overflow-hidden bg-[#090806]">
             <button
               onClick={() => setCurrency("NGN")}
@@ -1081,7 +1167,7 @@ export default function BrandShiftMediaHome() {
                 )}
 
                 <span
-                  className={`text-[8px] tracking-[4px] uppercase font-semibold mb-2.5 ${i === 1 ? "text-black/40" : i === 2 ? "text-white/60" : "text-[rgba(255,248,240,0.28)]"}`}
+                  className={`text-[8px] tracking-widest uppercase font-semibold mb-2.5 ${i === 1 ? "text-black/40" : i === 2 ? "text-white/60" : "text-[rgba(255,248,240,0.28)]"}`}
                 >
                   {pkg.tier}
                 </span>
@@ -1137,7 +1223,7 @@ export default function BrandShiftMediaHome() {
             View Full Pricing &rarr;
           </button>
         </Link>
-      </section>
+      </section> */}
 
       {/* FAQ INTERACTIVE COMPONENT EXPANDABLE */}
       <section
@@ -1201,7 +1287,7 @@ export default function BrandShiftMediaHome() {
       </section>
 
       {/* --- 8. CALL TO ACTION (CTA) --- */}
-      <motion.section
+      {/* <motion.section
         variants={containerVariants}
         initial="hidden"
         whileInView="visible"
@@ -1252,7 +1338,69 @@ export default function BrandShiftMediaHome() {
             </a>
           </motion.div>
         </div>
-      </motion.section>
+      </motion.section> */}
+
+      {/* CORE CTA HIGH CONVERSION MODULE SECTION */}
+
+      <section
+        id="CTA"
+        className="bg-linear-to-r from-[#DD4322] via-[#D9A021] to-[#DD7107] py-28 px-6 md:px-12 text-center relative overflow-hidden z-10"
+      >
+        <div className="absolute inset-0 bg-linear-to-r from-[#DD4322] to-[#DD7107] z-0 pointer-events-none" />
+
+        {/* HUGE BACKGROUND WATERMARK TYPOGRAPHY TEXT */}
+
+        <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 font-syne text-[clamp(60px,12vw,150px)] font-black text-black/[0.04] tracking-tighter whitespace-nowrap pointer-events-none select-none z-0">
+          GET TRACTION
+        </div>
+
+        <div className="max-w-[720px] mx-auto relative z-10">
+          <p className="text-[9px] tracking-[5px] uppercase text-black/45 font-semibold mb-5">
+            Ready to Gain Traction?
+          </p>
+
+          <h2 className="font-syne text-[clamp(32px,5vw,60px)] font-extrabold tracking-tight text-[#090806] leading-[1.04] mb-5">
+            Built to Move.
+            <br />
+            <em className="font-normal text-white italic">Crafted to Last.</em>
+          </h2>
+
+          <p className="text-base text-black/80 max-w-[500px] mx-auto font-light leading-relaxed mb-4">
+            {`Tell us about your business and what you're trying to build. We'll
+
+            come back with a clear plan and honest pricing. No pressure. No
+
+            fluff.`}
+          </p>
+
+          <p className="text-xs text-black/80 font-medium mb-10">
+            Reach us on{" "}
+            <strong className="text-black font-semibold">Instagram</strong>,{" "}
+            <strong className="text-black font-semibold">TikTok</strong>,{" "}
+            <strong className="text-black font-semibold">WhatsApp</strong> or{" "}
+            <strong className="text-black font-semibold">email</strong>. Tell us
+            {`where you are, we'll show you where you could be.`}
+          </p>
+
+          <div className="flex flex-wrap gap-3.5 justify-center">
+            <Link href={"https://wa.me/+2349023792627"}>
+              <button className="bg-[#090806] rounded-4xl text-[#D4A030] border-none px-9 py-4 text-[10px] tracking-[3px] uppercase font-extrabold cursor-pointer transition-colors hover:bg-[#1a1208]">
+                Direct Message Setup &rarr;
+              </button>
+            </Link>
+
+            <Link href={"#contact"}>
+              <button className="border-2 rounded-4xl bg-white border-white text-[#090806] px-9 py-3.5 text-[10px] tracking-[3px] uppercase font-semibold cursor-pointer transition-colors hover:border-black">
+                Book Strategy Session
+              </button>
+            </Link>
+          </div>
+
+          <div className="font-serif text-[clamp(22px,4vw,40px)] italic text-black/35 mt-10">
+            {`Let's build yours.`}
+          </div>
+        </div>
+      </section>
 
       {/* --- 9. CONTACT SECTION --- */}
       <motion.section
@@ -1271,8 +1419,8 @@ export default function BrandShiftMediaHome() {
               <span className="text-amber-500 text-[10px] font-bold uppercase tracking-widest block">
                 Contact Us
               </span>
-              <h2 className="text-3xl sm:text-6xl font-black tracking-tight text-white leading-none">
-                Let&apos;s Launch Something Real.
+              <h2 className="text-2xl sm:text-5xl font-black tracking-tight text-white leading-none">
+                Let&apos;s Launch <br /> <span className="text-[#D9A021]">Something Real.</span>
               </h2>
             </div>
 
@@ -1351,7 +1499,8 @@ export default function BrandShiftMediaHome() {
                 rel="noreferrer"
                 className="bg-[#25D366] text-black font-bold text-[10px] uppercase tracking-widest px-6 py-4 rounded-xl flex items-center justify-center gap-2 hover:bg-white transition-colors duration-300 shadow-lg"
               >
-                <MessageSquare className="w-4 h-4 fill-current" />
+                <FaWhatsapp className="w-4 h-4 fill-current" />
+                {/* <MessageSquare  /> */}
                 <span>WhatsApp Sync Channel</span>
               </motion.a>
             </div>
@@ -1419,6 +1568,7 @@ export default function BrandShiftMediaHome() {
                   <option>Web Development and management</option>
                   <option>Targeted Distribution Digital Ads Campaigns</option>
                   <option>Social Media Management</option>
+                  <option>Printing</option>
                   <option>Other Services</option>
                 </select>
               </div>
@@ -1559,28 +1709,36 @@ export default function BrandShiftMediaHome() {
             </h4>
             <div className="flex flex-col gap-3 text-xs text-gray-400">
               <Link
-                href="https://tiktok.com/@brandshiftmedia"
+                href="https://tiktok.com/@craftraction"
                 target="_blank"
                 rel="noreferrer"
-                className="hover:text-amber-500 transition-colors"
+                className="hover:text-amber-500 flex gap-2 transition-colors"
               >
-                TikTok: @craftraction
+                <FaTiktok /> @craftraction
+              </Link>
+              <Link
+                href="https://instagram.com/@craftraction"
+                target="_blank"
+                rel="noreferrer"
+                className="hover:text-amber-500 flex gap-2 transition-colors"
+              >
+                <FaInstagramSquare /> @craftraction
               </Link>
               <Link
                 href="mailto:craftraction@gmail.com"
                 target="_blank"
                 rel="noreferrer"
-                className="hover:text-amber-500 transition-colors"
+                className="hover:text-amber-500 flex gap-2 transition-colors"
               >
-                craftraction@gmail.com
+                <BiLogoGmail /> craftraction@gmail.com
               </Link>
               <Link
                 href="https://wa.me/2349023792627"
                 target="_blank"
                 rel="noreferrer"
-                className="hover:text-amber-500 transition-colors"
+                className="hover:text-amber-500 flex gap-2 transition-colors"
               >
-                +234 902 379 2627
+                <FaWhatsapp /> +234 902 379 2627
               </Link>
             </div>
           </div>

@@ -12,7 +12,7 @@ const Marquee = () => {
   ];
 
   return (
-    <section className="py-12 bg-white/2 overflow-hidden h-10 border-y flex items-center border-white/5 relative">
+    <section className="py-12 bg-white overflow-hidden h-10 border-y flex items-center border-white/5 relative">
         {/* Ambient Red Glow Behind Marquee */}
         <div className="absolute inset-y-0 left-1/4 w-96 bg-red-600/5 blur-[80px] pointer-events-none" />
 
@@ -22,7 +22,7 @@ const Marquee = () => {
           <div className="flex shrink-0 items-center gap-16 min-w-full animate-marquee">
             {[...designKeywords, ...designKeywords, ...designKeywords].map((word, idx) => (
               <div key={`track1-${idx}`} className="flex items-center gap-16">
-                <span className="text-xl sm:text-2xl text-[#DD7107]  uppercase tracking-tighter group-hover:text-[#DD4322] transition-colors duration-300">
+                <span className="text-md sm:text-xl font-syne text-[#D9A021] font-semibold uppercase tracking-tighter group-hover:text-[#DD4322] transition-colors duration-300">
                   {word}
                 </span>
                 {/* Star separator with a touch of gold/red */}
