@@ -12,7 +12,7 @@ const Marquee = () => {
   ];
 
   return (
-    <section className="py-12 bg-white/2 overflow-hidden h-10 flex items-center border-white/5 relative">
+    <section className="py-12 bg-transparent overflow-hidden h-10 flex items-center relative">
         {/* Ambient Red Glow Behind Marquee */}
         <div className="absolute inset-y-0 left-1/4 w-96 bg-red-600/5 blur-[80px] pointer-events-none" />
 

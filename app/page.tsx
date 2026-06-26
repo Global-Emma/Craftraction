@@ -807,8 +807,7 @@ export default function BrandShiftMediaHome() {
               <span className="text-[#D9A021]">One Roof.</span>
             </h2>
             <p className="text-gray-400 text-xs sm:text-sm max-w-lg mx-auto">
-              Stop juggling vendors. From your first logo to your first viral
-              post to your first ad campaign, Craftraction handles every layer
+              Stop juggling vendors. Craftraction handles every layer
               of your digital presence. Bridging cutting-edged creativity and
               predictable digital solutions. We step outside traditional agency
               architecture to create innovative digital solutions. We redefine
