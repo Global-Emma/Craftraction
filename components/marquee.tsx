@@ -14,7 +14,7 @@ const Marquee = () => {
   return (
     <section className="py-12 bg-transparent overflow-hidden h-10 flex items-center relative">
         {/* Ambient Red Glow Behind Marquee */}
-        <div className="absolute inset-y-0 left-1/4 w-96 bg-red-600/5 blur-[80px] pointer-events-none" />
+        {/* <div className="absolute inset-y-0 left-1/4 w-96 bg-red-600/5 blur-[80px] pointer-events-none" /> */}
 
         {/* Main Container Wrapper (Handles Hover Pause) */}
         <div className="flex overflow-hidden select-none group hover-pause relative z-10">

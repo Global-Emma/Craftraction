@@ -651,10 +651,9 @@ export default function BrandShiftMediaHome() {
             className="text-md sm:text-lg text-gray-400 max-w-2xl mx-auto mb-12 leading-relaxed font-normal"
           >
             Craftraction is a creative and digital agency built for brands that
-            refuse to be ignored. We shape your digital presence through
-            branding, web development, digital marketing, and strategic
-            advertising - generating traction that drives measurable
-            results. We do not chase attention. We craft it.
+            refuse to be ignored. We shape your online presence through bold
+            branding, strategic creativity and powerful digital solutions that
+            drive measurable results. We do not chase attention. We craft it.
           </motion.p>
 
           {/* Accessible Action Controls */}
@@ -715,7 +714,7 @@ export default function BrandShiftMediaHome() {
         viewport={{ once: false, amount: 0.1 }}
         layout
         id="about"
-        className="py-32 px-6 max-w-7xl mx-auto border-b border-t border-white/5 relative"
+        className="py-32 px-6 max-w-7xl mx-auto border-b-none border-t border-white/5 relative"
       >
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
           <motion.div
@@ -807,8 +806,8 @@ export default function BrandShiftMediaHome() {
               <span className="text-[#D9A021]">One Roof.</span>
             </h2>
             <p className="text-gray-400 text-xs sm:text-sm max-w-lg mx-auto">
-              Stop juggling vendors. Craftraction handles every layer
-              of your digital presence. Bridging cutting-edged creativity and
+              Stop juggling vendors. Craftraction handles every layer of your
+              digital presence. Bridging cutting-edged creativity and
               predictable digital solutions. We step outside traditional agency
               architecture to create innovative digital solutions. We redefine
               hoe your customers interact wth your products by infusing hyper
@@ -833,7 +832,12 @@ export default function BrandShiftMediaHome() {
                   className="bg-white/1 border border-white/5 rounded-2xl p-8 hover:border-[#DD4322]/30 hover:bg-white/3 transition-all duration-500 group flex flex-col justify-between relative overflow-hidden"
                 >
                   <div className="absolute top-0 right-0 w-24 h-24 pointer-events-none rounded-bl-full group-hover:from-amber-500/3 transition-all">
-                    <Image src={"/images/logo_icon.png"} alt="icon" height={100} width={100} />
+                    <Image
+                      src={"/images/logo_icon.png"}
+                      alt="icon"
+                      height={100}
+                      width={100}
+                    />
                   </div>
                   <div>
                     <div className="w-12 h-12 bg-white/5 border border-white/10 text-white rounded-xl flex items-center justify-center mb-8 group-hover:bg-[#DD4322] group-hover:border-[#DD4322] group-hover:text-white transition-all duration-300 group-hover:rotate-6">
@@ -861,20 +865,20 @@ export default function BrandShiftMediaHome() {
         transition={{ delay: 1 * 0.05, duration: 0.5 }}
         whileHover={{ y: -6 }}
         id="portfolio"
-        className="py-32 overflow-hidden bg-black relative"
+        className="py-32 overflow-hidden bg-linear-to-r from-[#DD4322] to-[#DD7107] relative"
       >
         {/* Ambient background glow focusing the marquee */}
         <div className="absolute top-1/2 left-1/4 -translate-y-1/2 w-96 h-96 bg-[#DD4322]/5 blur-[120px] pointer-events-none" />
 
         <div className="max-w-7xl mx-auto px-6 mb-16 flex flex-col md:flex-row md:items-end justify-between gap-8">
           <div className="space-y-4">
-            <span className="text-[#D9A021] text-[10px] font-bold uppercase tracking-[5px] block">
+            <span className="text-[#000000] text-[10px] font-bold uppercase tracking-[5px] block">
               Our Selected Work{" "}
-              <span className="text-[#D9A021]">Portfolio</span>
+              <span className="text-[#000000]">Portfolio</span>
             </span>
             <h2 className="text-2xl sm:text-5xl font-black tracking-tight text-white">
               Visual Case{" "}
-              <span className="text-[#D9A021]">Implementations</span>
+              <span className="text-[#000000]">Implementations</span>
             </h2>
           </div>
 
@@ -889,8 +893,8 @@ export default function BrandShiftMediaHome() {
                 onClick={() => setActiveCategory(category)}
                 className={`text-[10px] font-bold uppercase tracking-widest px-6 py-3 cursor-pointer rounded-full border whitespace-nowrap transition-all duration-300 focus:outline-none focus:ring-1 focus:ring-amber-500 ${
                   activeCategory === category
-                    ? "bg-[#D9A021] text-black border-white shadow-lg"
-                    : "bg-transparent text-gray-400 border-[#DD4322] hover:border-[#DD7107] hover:text-white"
+                    ? "bg-[#000000] text-white border-white shadow-lg"
+                    : "bg-transparent text-gray-400 border-[#ffffff] hover:border-[#000000] hover:text-white"
                 }`}
               >
                 {category}
@@ -900,7 +904,7 @@ export default function BrandShiftMediaHome() {
         </div>
 
         {/* --- Infinite Marquee Track Wrappers --- */}
-        <div className="flex overflow-hidden select-none group hover-pause border-y border-white/5 py-4 bg-zinc-950/30 relative z-10">
+        <div className="flex overflow-hidden select-none group hover-pause border-y border-white/5 py-4 bg-transparent relative z-10">
           {/* Track 1 */}
           <div className="flex shrink-0 items-stretch gap-8 min-w-full animate-marquee pr-8">
             {[
@@ -928,7 +932,7 @@ export default function BrandShiftMediaHome() {
                     <span className="text-[9px] font-bold tracking-widest uppercase text-#D9A021 block mb-1">
                       {item.category}
                     </span>
-                    <h3 className="text-base font-bold text-white tracking-tight group-hover/card:text-amber-500 transition-colors">
+                    <h3 className="text-base font-bold text-white tracking-tight group-hover/card:text-[#000000] transition-colors">
                       {item.title}
                     </h3>
                   </div>
@@ -963,9 +967,8 @@ export default function BrandShiftMediaHome() {
         viewport={{ once: false, amount: 0.1 }}
         layout
         id="why-us"
-        className="py-32 px-6 bg-linear-to-r from-[#DD4322] to-[#DD7107] border-t border-b border-white/5 relative"
+        className="py-32 px-6 bg-[#030303] border-t border-b-none border-white/5 relative"
       >
-        
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
           <motion.div
             className="lg:col-span-5 space-y-6"
@@ -973,14 +976,15 @@ export default function BrandShiftMediaHome() {
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <span className="text-[#000000] text-[10px] tracking-[5px] font-bold uppercase block">
+            <span className="text-[#D9A021] text-[10px] font-bold uppercase tracking-widest block">
               Why Choose Us
             </span>
             <h2 className="text-2xl sm:text-5xl font-black tracking-tight text-white leading-[1.05]">
-              Other agencies make content.{" "}
-              <span className="text-[#000000]">We build momentum.</span>
+              Other agencies make content. 
+              
+              <span className="text-[#D9A021]">We build momentum.</span>
             </h2>
-            <p className="text-[#000000b6] text-justify text-xs sm:text-sm leading-relaxed">
+            <p className="text-gray-400 text-xs text-justify sm:text-sm leading-relaxed">
               The difference between a brand that drifts and a brand that moves
               is intentional creative force. We bring strategic thinking to
               every brief, bold execution to every project, and relentless
@@ -1001,16 +1005,16 @@ export default function BrandShiftMediaHome() {
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="bg-black border border-white/5 hover:border-white/10 p-6 rounded-2xl space-y-4 transition-all duration-300 relative group"
+                className="bg-linear-to-r from-[#DD4322] to-[#DD7107] border border-white/5 hover:border-white/10 p-6 rounded-2xl space-y-4 transition-all duration-300 relative group"
               >
-                <div className="w-8 h-8 bg-white/2 text-[#DD4322] border border-white/10 rounded-lg flex items-center justify-center group-hover:text-[#ffffff] group-hover:border-[#DD4322]/30 transition-colors">
+                <div className="w-8 h-8 bg-white/5 text-white border border-white/10 rounded-lg flex items-center justify-center group-hover:text-[#000000] group-hover:border-[#000000]/30 transition-colors">
                   <CheckCircle2 className="w-4 h-4" />
                 </div>
                 <div className="space-y-1">
-                  <h3 className="text-base font-bold text-[#D9A021] tracking-tight">
+                  <h3 className="text-base font-bold text-white tracking-tight">
                     {item.title}
                   </h3>
-                  <p className="text-[#ffffffdc] text-xs sm:text-sm leading-relaxed">
+                  <p className="text-black text-xs sm:text-sm leading-relaxed">
                     {item.desc}
                   </p>
                 </div>
@@ -1071,7 +1075,7 @@ export default function BrandShiftMediaHome() {
 
       <section
         id="process"
-        className="bg-white/2 py-24 px-6 md:px-12 border-t border-[rgba(212,160,48,0.14)] relative z-10"
+        className="bg-white/2 py-24 px-6 md:px-12 border-t-none border-[rgba(212,160,48,0.14)] relative z-10"
       >
         <div className="max-w-[1280px] mx-auto">
           <div className="text-[10px] tracking-[5px] uppercase text-white font-semibold mb-3.5 flex items-center gap-3">
@@ -1419,7 +1423,8 @@ export default function BrandShiftMediaHome() {
                 Contact Us
               </span>
               <h2 className="text-2xl sm:text-5xl font-black tracking-tight text-white leading-none">
-                Let&apos;s Launch <br /> <span className="text-[#D9A021]">Something Real.</span>
+                Let&apos;s Launch <br />{" "}
+                <span className="text-[#D9A021]">Something Real.</span>
               </h2>
             </div>
 
